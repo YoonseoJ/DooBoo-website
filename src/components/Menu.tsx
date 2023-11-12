@@ -1,42 +1,49 @@
-import MenuCard from './MenuCard'
-import MenuName from './ui/MenuName'
-import MenuTitle from './ui/MenuTitle'
 import PageTitle from './ui/PageTitle'
-import dumpleImage from '../../public/dumpling.png'
-import MenuGrid from './MenuGrid'
+import { useState } from 'react'
+import AppitizersMenu from './AppitizersMenu'
+import MainMenu from './MainMenu'
+import SpecialMenu from './SpecialMenu'
+import ComboMenu from './ComboMenu'
+import DrinksMenu from './DrinksMenu'
+
+const MenuList = [
+    {name: 'appitizers', component: <AppitizersMenu/>},
+    {name: 'main', component: <MainMenu/>},
+    {name: 'special', component: <SpecialMenu/>},
+    {name: 'combo', component: <ComboMenu/>},
+    {name: 'drinks', component: <DrinksMenu/>},
+]
 
 export default function Menu() {
+    const [selected, setSelected] = useState('main')
     
     return (
-        <div className='w-240 mx-auto my-20'>
+        <div className='w-240 mx-auto my-20 mb-40'>
             <PageTitle text='menu' />
-            <div>
-                <MenuTitle text={'Appitizers'} />
-                <ul>
-                    <li>
-                        {/* <MenuGrid /> */}
-                        {/* <MenuCard image={dumpleImage} eng='Fried Dumplings' kor='군만두' price='10.99'/> */}
-                        <MenuName eng='Fried Dumplings' kor='군만두' price='10.99'/>
-                        <MenuName eng='Fried Clams'  kor='조갯살튀김' price='10.99'/>
-                        <MenuName eng='Chicken Salad'  kor='치킨샐러드' price='13.99'/>
-                        <MenuName eng='Tofu Salad with Sesame Dressing'  kor='두부샐러드' price='11.99'/>
-                        <MenuName eng='Deep Fried Shrimp Salad'  kor='새우샐러드' price='12.99'/>
-                        <MenuName eng='Stir Fried Rice Cakes'  kor='떡볶이' price='10.99'/>
-                    </li>
-                </ul>
+
+            <div className='flex place-content-evenly'>
+                {MenuList.map((menu) => (
+                    <button
+                        key={menu.name} 
+                        onClick={() => {setSelected(menu.name)}}
+                        className={`cursor-pointer uppercase hover:text-dooboo-400 border-b-2  
+                                ${menu.name === selected 
+                                    ? 'border-dooboo-400 text-dooboo-400' 
+                                    : 'border-white'}
+                            `}
+                    >
+                        {menu.name}
+                    </button>
+                ))}
             </div>
-            <div>
-                <MenuTitle text='Main Menu' />
-            </div>
-            <div>
-                <MenuTitle text='Special Menu' />
-            </div>
-            <div>
-                <MenuTitle text='Combo Menu' />
-            </div>
-            <div>
-                <MenuTitle text='Drinks' />
-            </div>
+            {MenuList.map((menu) => {
+                if (menu.name === selected) {
+                    return (
+                        <>{menu.component}</>
+                    )
+                }
+            })}
         </div>
+        
     )
 }

@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default function Header() {
     
     return (
-        <div className='fixed w-full bg-dooboo-500 px-8 pt-3 pb-4 flex place-content-between z-10 text-neutral-200 items-center'>
+        <div className='fixed w-full bg-dooboo-700 px-8 pt-3 pb-4 flex place-content-between z-10 text-neutral-200 items-center'>
             <Link 
                 activeClass="active"
                 to='landing' href="/"

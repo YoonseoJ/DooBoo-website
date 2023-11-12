@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={roboto.className && 'bg-dooboo-100 '}>
+    <html lang="en" className={roboto.className && ''}>
       <body className=' top-0'>
         <Header/>
         <main className='grow flex flex-col mx-auto'>{children}</main>

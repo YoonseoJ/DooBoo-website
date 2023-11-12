@@ -5,6 +5,6 @@ type Props = {
 export default function MenuTitle({text}: Props) {
     
     return (
-        <h1 className=' text-5xl text-center py-10 font-bold '>{text}</h1>
+        <h1 className=' text-4xl text-center py-10 font-semibold '>{text}</h1>
     )
 }
