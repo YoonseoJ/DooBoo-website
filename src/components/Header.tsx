@@ -1,7 +1,8 @@
 'use client'
 
+import Image from 'next/image';
 import { Link, animateScroll as scroll } from "react-scroll";
-// import Link from 'next/link'
+import Logo from '../../public/logo_w.png'
 
 export default function Header() {
     
@@ -15,7 +16,11 @@ export default function Header() {
                 offset={-70}
                 duration={500}
             >
-                <p className=' text-2xl '>DooBoo</p>
+                <Image src={Logo}
+                    alt='Picture of the dooboo logo' 
+                    className='mx-auto object-contain w-32 brightness-165'
+                    priority
+                />
             </Link>
             <nav className=' space-x-8'>
                 <Link 
