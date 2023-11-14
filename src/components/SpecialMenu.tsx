@@ -35,7 +35,8 @@ export default function SpecialMenu() {
                         kor='오징어 볶음' 
                         price='23.99' 
                         spicyOptions={[
-                            'Mild Spicy'
+                            'Mild',
+                            'Spicy'
                         ]}
                     />
                     <MenuCard 

@@ -5,6 +5,8 @@ import MainMenu from './MainMenu'
 import SpecialMenu from './SpecialMenu'
 import ComboMenu from './ComboMenu'
 import DrinksMenu from './DrinksMenu'
+import Image from 'next/image'
+import Deco from '../../public/deco.png'
 
 const MenuList = [
     {name: 'appitizers', component: <AppitizersMenu/>},
@@ -18,7 +20,14 @@ export default function Menu() {
     const [selected, setSelected] = useState('main')
     
     return (
-        <div className='w-240 mx-auto my-20 mb-40'>
+        <div className='w-240 mx-auto mb-28'>
+             <div>
+                <Image 
+                    src={Deco} 
+                    alt='Picture of the dooboo logo' 
+                    className='mx-auto object-contain w-7 brightness-165'
+                />
+            </div>
             <PageTitle text='menu' />
             
                 <div className='flex place-content-evenly'>
@@ -36,7 +45,8 @@ export default function Menu() {
                         </button>
                     ))}
                 </div>
-                <div className='flex flex-col mx-auto items-center mt-10'>
+               
+                <div className='flex flex-col mx-auto items-center mt-0'>
                 {MenuList.map((menu) => {
                     if (menu.name === selected) {
                         return (

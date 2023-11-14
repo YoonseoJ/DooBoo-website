@@ -33,7 +33,8 @@ const config: Config = {
       },
       spacing: {
         '240': '55rem',
-        '0.5': '0.5px'
+        '0.5': '0.5px',
+        '220': '50rem'
       }
     },
   },

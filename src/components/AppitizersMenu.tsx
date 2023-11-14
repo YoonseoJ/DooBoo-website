@@ -1,6 +1,4 @@
 import MenuCard from './MenuCard';
-import MenuGrid from './MenuGrid';
-import MenuName from './ui/MenuName';
 import dumpleImage from '../../public/fried_dumpling.png'
 import MenuTitle from './ui/MenuTitle';
 
@@ -11,7 +9,6 @@ export default function AppitizersMenu() {
             <MenuTitle text={'Appitizers'} />
             <ul>
                 <li className='flex flex-col gap-7'>
-                    {/* <MenuGrid /> */}
                     <MenuCard 
                         image={dumpleImage} 
                         eng='Fried Dumplings' 

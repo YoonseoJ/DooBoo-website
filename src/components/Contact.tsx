@@ -8,19 +8,27 @@ import PhoneIcon from './ui/icons/PhoneIcon'
 import TimeIcon from './ui/icons/TimeIcon'
 import InstagramIcon from './ui/icons/InstagramIcon'
 import Logo from '../../public/logo_b.png'
+import Deco from '../../public/deco.png'
 
 export default function Contact() {
     return (
-        <div className='py-20 flex flex-col items-center mb-5'>
-            <div className=' w-60 pt-10 pb-20'>
+        <div className='pb-20 flex flex-col items-center mb-5'>
+            <div>
+                <Image 
+                    src={Deco} 
+                    alt='Picture of the dooboo logo' 
+                    className='mx-auto object-contain w-7 brightness-165'
+                />
+            </div>
+            <div className=' w-52 pt-10 pb-20'>
                 <Image src={Logo}
                     alt='Picture of the dooboo logo' 
                     className='mx-auto object-contain w-full brightness-165'
                     priority
                 />
             </div>
-            <div className='flex w-3/5 place-content-center bg-dooboo-600 bg-opacity-5 -top-16 p-10'>
-                <div className='flex place-content-center w-2/3'>
+            <div className='flex w-220 place-content-center bg-dooboo-600 bg-opacity-5 -top-16 p-10'>
+                <div className='flex place-content-center w-72'>
                     <Image src={Mascot} 
                         alt='Picture of the mascot' 
                         className='mx-auto object-contain w-full brightness-165'

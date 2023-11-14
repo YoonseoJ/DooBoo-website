@@ -1,8 +1,6 @@
 import MenuCard from './MenuCard';
 import MenuTitle from './ui/MenuTitle';
 import dumpleImage from '../../public/fried_dumpling.png'
-import MenuOptions from './ui/MenuOptions';
-import MenuSpicyOptions from './ui/MenuSpicyOptions';
 
 
 export default function MainMenu() {
@@ -134,14 +132,14 @@ export default function MainMenu() {
                         price='14.99' 
                     />
                     <div className=' -mt-5'>
-                        <ul className={`pl-5 text-neutral-500 mt-2 text-sm flex flex-col flex-wrap w-72`}>
+                        <ul className={`pl-5 text-neutral-500 mt-2 text-sm flex flex-col flex-wrap w-80`}>
                             <li className='flex place-content-between '>
                                 <p>Mul NaengMyun</p>
-                                <p className='text-sm text-red-700 opacity-60'>Plain | Spicy</p>
+                                <p className='text-sm text-red-700 opacity-60'>Plain &nbsp;/&nbsp; Spicy</p>
                             </li>
                             <li className='flex place-content-between '>
                                 <p>{`Bibim NaengMyun (Spicy)`}</p>
-                                <p className='text-sm text-red-700 opacity-60'>Mild | Spicy</p>
+                                <p className='text-sm text-red-700 opacity-60'>Mild &nbsp;/&nbsp; Spicy</p>
                             </li>
                         </ul>
                         
