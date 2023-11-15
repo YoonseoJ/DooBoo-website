@@ -1,3 +1,5 @@
+import DoubleArrowIcon from './icons/DoubleArrowIcon'
+
 type Props = {
     eng: string
     kor: string
@@ -18,9 +20,8 @@ export default function MenuName({eng, kor, price, isCol = false, addCheese = fa
                 <p>{kor}</p>
             </div>
             {addCheese &&
-                <p className='text-neutral-500 text-sm'>Add Cheese $3</p>
+                <p className='text-neutral-500 text-sm flex items-center'><DoubleArrowIcon color='text-red-300' />Add Cheese $3</p>
             }
-            <div className=' h-0.5 border-n bg-slate-500'/>
             <p>${price}</p>
         </div>
         
