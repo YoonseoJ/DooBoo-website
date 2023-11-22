@@ -6,7 +6,7 @@ import MenuCard from './MenuCard';
 export default function SpecialMenu() {
     
     return (
-        <div className='w-2/4'>
+        <div className='w-10/12 md:w-[30rem]'>
             <MenuTitle text='Special Menu' />
             <ul>
                 <li className='flex flex-col gap-7'>

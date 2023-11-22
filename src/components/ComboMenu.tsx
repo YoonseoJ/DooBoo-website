@@ -4,7 +4,7 @@ import DoubleArrowIcon from './ui/icons/DoubleArrowIcon';
 export default function ComboMenu() {
     
     return (
-        <div  className='w-3/5'>
+        <div  className='w-10/12 md:w-[35rem]'>
             <MenuTitle text='Combo Menu' />
             <div className='flex flex-col gap-7 items-center'>
                 <h3 className='text-xl text-neutral-500'>Soup Combo</h3>
@@ -13,7 +13,10 @@ export default function ComboMenu() {
                         <p className=' px-2 py-0.5 rounded-full text-white bg-orange-300'>A</p>
                         <p className=' font-semibold'>Soup</p>
                         <p>+</p>
-                        <p>Bulgogi / Grilled Mackerel</p>
+                        <p className='flex flex-wrap'>
+                            <p>Bulgogi&nbsp;</p> 
+                            <p>/ Grilled Mackerel&nbsp;</p>
+                        </p>
                     </div>
                     <p>$25.99</p>
                 </div>
@@ -22,12 +25,16 @@ export default function ComboMenu() {
                         <p className=' px-2 py-0.5 rounded-full text-white bg-orange-300'>B</p>
                         <p className=' font-semibold'>Soup</p>
                         <p>+</p>
-                        <p>Pork Galbi / Pork Belly / Short Ribs</p>
+                        <p className='flex flex-wrap'>
+                            <p>Pork Galbi&nbsp;</p> 
+                            <p>/ Pork Belly&nbsp;</p> 
+                            <p>/ Short Ribs&nbsp;</p>
+                        </p>
                     </div>
                     <p>$40.99</p>
                 </div>
                 <h3 className='text-xl text-neutral-500 mt-5'>Naengmyun Combo</h3>
-                <div className={`flex w-full  gap-1 place-content-between items-center`}>
+                <div className={`flex w-full gap-1 place-content-between items-center`}>
                     <div className='flex gap-2 items-center'>
                         <p className=' px-2 py-0.5 rounded-full text-white bg-orange-300'>A</p>
                         <p className=' font-semibold'>Naengmyun</p>
@@ -36,18 +43,41 @@ export default function ComboMenu() {
                     </div>
                     <p>$24.99</p>
                 </div>
-                <div className={`flex w-full  gap-1 place-content-between items-center`}>
-                    <div className='flex gap-2'>
+                <div className={`flex w-full gap-1 place-content-between items-center`}>
+                    <div className='flex gap-2 items-center'>
                         <p className=' px-2 py-0.5 rounded-full text-white bg-orange-300'>B</p>
                         <p className=' font-semibold'>Naengmyun</p>
                         <p>+</p>
-                        <p>Pork Galbi / Pork Belly / Short Ribs</p>
+                        <p className='flex flex-wrap'>
+                            <p>Pork Galbi&nbsp;</p> 
+                            <p>/ Pork Belly&nbsp;</p> 
+                            <p>/ Short Ribs&nbsp;</p>
+                        </p>
                     </div>
                     <p>$39.99</p>
                 </div>
                 
-                <p className='w-full mt-5 text-sm text-neutral-500 flex items-center'><DoubleArrowIcon color='text-neutral-500'/>Soup Options - Soft Tofu Soup / Kimchi Stew / Doenjang Stew</p>
-                <p className='w-full -mt-5 text-sm text-neutral-500 flex items-center'><DoubleArrowIcon color='text-neutral-500'/>Naengmyun Options - Mul Naengmyun / Bibim Naengmyun</p>
+                <div className='w-full mt-5 text-sm text-neutral-500 flex items-center flex-wrap'>
+                    <div className='flex items-center'>
+                        <DoubleArrowIcon color='text-neutral-500'/>
+                        <p>Soup Options -</p>
+                    </div>
+                    <p className='flex flex-wrap'>
+                        <p>&nbsp;Soft Tofu Soup&nbsp;</p>
+                        <p>/ Kimchi Stew&nbsp;</p>
+                        <p>/ Doenjang Stew&nbsp;</p>
+                    </p>
+                </div>
+                <div className='w-full -mt-5 text-sm text-neutral-500 flex items-center flex-wrap'>
+                    <div className='flex items-center'>
+                        <DoubleArrowIcon color='text-neutral-500'/>
+                        <p>Naengmyun Options -</p>
+                    </div>
+                    <p className='flex flex-wrap'>
+                        <p>&nbsp;Mul Naengmyun&nbsp;</p>
+                        <p>/ Bibim Naengmyun&nbsp;</p>
+                    </p>
+                </div>
             </div>
         </div>
     )

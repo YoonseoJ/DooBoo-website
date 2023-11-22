@@ -20,33 +20,32 @@ export default function Menu() {
     const [selected, setSelected] = useState('main')
     
     return (
-        <div className='w-11/12 mx-auto mb-28 lg:w-[55rem]'>
+        <div className='w-full mx-auto mb-28 lg:w-[55rem]'>
              <div>
                 <Image 
                     src={Deco} 
                     alt='Picture of the dooboo logo' 
-                    className='mx-auto object-contain w-7 brightness-165'
+                    className='mx-auto object-contain w-5 brightness-165 md:w-7'
                 />
             </div>
             <PageTitle text='menu' />
+            <div className='flex place-content-evenly'>
+                {MenuList.map((menu) => (
+                    <button
+                        key={menu.name} 
+                        onClick={() => {setSelected(menu.name)}}
+                        className={`cursor-pointer uppercase hover:text-dooboo-400 border-b-2  
+                                ${menu.name === selected 
+                                    ? 'border-dooboo-400 text-dooboo-400' 
+                                    : 'border-white'}
+                            `}
+                    >
+                        {menu.name}
+                    </button>
+                ))}
+            </div>
             
-                <div className='flex place-content-evenly'>
-                    {MenuList.map((menu) => (
-                        <button
-                            key={menu.name} 
-                            onClick={() => {setSelected(menu.name)}}
-                            className={`cursor-pointer uppercase hover:text-dooboo-400 border-b-2  
-                                    ${menu.name === selected 
-                                        ? 'border-dooboo-400 text-dooboo-400' 
-                                        : 'border-white'}
-                                `}
-                        >
-                            {menu.name}
-                        </button>
-                    ))}
-                </div>
-               
-                <div className='flex flex-col mx-auto items-center mt-0'>
+            <div className='flex flex-col mx-auto items-center mt-0'>
                 {MenuList.map((menu) => {
                     if (menu.name === selected) {
                         return (

@@ -1,12 +1,13 @@
 import MenuCard from './MenuCard';
 import MenuTitle from './ui/MenuTitle';
 import dumpleImage from '../../public/fried_dumpling.png'
+import DoubleArrowIcon from './ui/icons/DoubleArrowIcon';
 
 
 export default function MainMenu() {
     
     return (
-        <div className='w-2/4'>
+        <div className='w-10/12 md:w-[30rem]'>
             <MenuTitle text='Main Menu' />
             <ul>
                 <li className='flex flex-col gap-7'>
@@ -132,14 +133,20 @@ export default function MainMenu() {
                         price='14.99' 
                     />
                     <div className=' -mt-5'>
-                        <ul className={`pl-5 text-neutral-500 mt-2 text-sm flex flex-col flex-wrap w-80`}>
-                            <li className='flex place-content-between '>
-                                <p>Mul NaengMyun</p>
-                                <p className='text-sm text-red-700 opacity-60'>Plain &nbsp;/&nbsp; Spicy</p>
+                        <ul className={`pl-2 text-neutral-500 mt-2 text-sm flex flex-col flex-wrap w-80 md:pl-5`}>
+                            <li className='flex place-content-between'>
+                                <div className='flex items-center'>
+                                    <DoubleArrowIcon color='text-orange-200'/>
+                                    <p>Mul NaengMyun</p>
+                                </div>
+                                <p className='text-sm text-red-700 opacity-60 flex items-center'><DoubleArrowIcon color='text-red-700' />Plain &nbsp;/&nbsp; Spicy</p>
                             </li>
-                            <li className='flex place-content-between '>
-                                <p>{`Bibim NaengMyun (Spicy)`}</p>
-                                <p className='text-sm text-red-700 opacity-60'>Mild &nbsp;/&nbsp; Spicy</p>
+                            <li className='flex place-content-between'>
+                            <div className='flex items-center'>
+                                    <DoubleArrowIcon color='text-orange-200'/>
+                                    <p>{`Bibim NaengMyun (Spicy)`}</p>
+                                </div>
+                                <p className='text-sm text-red-700 opacity-60 flex items-center'><DoubleArrowIcon color='text-red-700' />Mild &nbsp;/&nbsp; Spicy</p>
                             </li>
                         </ul>
                         
