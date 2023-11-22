@@ -11,7 +11,6 @@ export default function MainMenu() {
             <MenuTitle text='Main Menu' />
             <ul>
                 <li className='flex flex-col gap-7'>
-                    {/* <MenuGrid /> */}
                     <MenuCard 
                         image={dumpleImage} 
                         eng='Soft Tofu Soup' 
@@ -133,20 +132,20 @@ export default function MainMenu() {
                         price='14.99' 
                     />
                     <div className=' -mt-5'>
-                        <ul className={`pl-2 text-neutral-500 mt-2 text-sm flex flex-col flex-wrap w-80 md:pl-5`}>
-                            <li className='flex place-content-between'>
-                                <div className='flex items-center'>
+                        <ul className={`pl-2 text-neutral-500 mt-2 text-sm flex flex-col justify-between w-9/12 md:w-96 md:pl-5`}>
+                            <li className='flex place-content-between flex-wrap'>
+                                <div className='flex items-center w-52 '>
                                     <DoubleArrowIcon color='text-orange-200'/>
                                     <p>Mul NaengMyun</p>
                                 </div>
-                                <p className='text-sm text-red-700 opacity-60 flex items-center'><DoubleArrowIcon color='text-red-700' />Plain &nbsp;/&nbsp; Spicy</p>
+                                <p className='text-sm text-red-700 w-28 opacity-60 flex items-center'><DoubleArrowIcon color='text-red-700' />Plain &nbsp;/&nbsp; Spicy</p>
                             </li>
-                            <li className='flex place-content-between'>
-                            <div className='flex items-center'>
+                            <li className='flex place-content-between flex-wrap'>
+                                <div className='flex items-center w-52 '>
                                     <DoubleArrowIcon color='text-orange-200'/>
                                     <p>{`Bibim NaengMyun (Spicy)`}</p>
                                 </div>
-                                <p className='text-sm text-red-700 opacity-60 flex items-center'><DoubleArrowIcon color='text-red-700' />Mild &nbsp;/&nbsp; Spicy</p>
+                                <p className='text-sm text-red-700 w-28 opacity-60 flex items-center'><DoubleArrowIcon color='text-red-700' />Mild &nbsp;/&nbsp; Spicy</p>
                             </li>
                         </ul>
                         

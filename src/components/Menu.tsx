@@ -49,7 +49,7 @@ export default function Menu() {
                 {MenuList.map((menu) => {
                     if (menu.name === selected) {
                         return (
-                            <>{menu.component}</>
+                            <div className='w-fit flex justify-center' key={menu.name}>{menu.component}</div>
                         )
                     }
                 })}
