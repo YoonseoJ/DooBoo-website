@@ -7,7 +7,7 @@ import Logo from '../../public/logo_w.png'
 export default function Header() {
     
     return (
-        <div className='fixed w-full bg-dooboo-700 px-8 pt-3 pb-4 flex place-content-between z-20 text-neutral-200 items-center'>
+        <div className='fixed w-full bg-dooboo-700 px-4 pt-3 pb-4 flex place-content-between z-20 text-neutral-200 items-center md:px-8'>
             <Link 
                 activeClass="active"
                 to='landing' href="/"
@@ -18,11 +18,11 @@ export default function Header() {
             >
                 <Image src={Logo}
                     alt='Picture of the dooboo logo' 
-                    className='mx-auto object-contain w-32 brightness-165'
+                    className='mx-auto object-contain w-24 brightness-165 md:w-32'
                     priority
                 />
             </Link>
-            <nav className=' space-x-8'>
+            <nav className='space-x-6 md:space-x-8'>
                 <Link 
                     activeClass="active"
                     to='menu' href="#menu"

@@ -20,7 +20,7 @@ export default function Menu() {
     const [selected, setSelected] = useState('main')
     
     return (
-        <div className='w-240 mx-auto mb-28'>
+        <div className='w-11/12 mx-auto mb-28 lg:w-[55rem]'>
              <div>
                 <Image 
                     src={Deco} 

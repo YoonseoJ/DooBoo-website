@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className='pt-20 pb-28 bg-dooboo-600'>
             <PageTitle text='about' color='light'/>
-            <div className='w-220 text-neutral-200 flex mx-auto text-center'>
+            <div className=' w-11/12 text-neutral-200 flex mx-auto text-center lg:w-[50rem]'>
                 <p>{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                     when an unknown printer took a galley of type and scrambled it to make 
