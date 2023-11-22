@@ -12,11 +12,11 @@ export default function MenuSpicyOptions({options, }: Props) {
             {options.map((option, i, arr) => {
                 if(i+1 !== arr.length) {
                     return (
-                        <li>{option} &nbsp;/&nbsp; </li>
+                        <li key={option}>{option} &nbsp;/&nbsp; </li>
                     )
                 } else {
                     return (
-                        <li>{option}</li>
+                        <li key={option}>{option}</li>
                     )
                 }
             })}
