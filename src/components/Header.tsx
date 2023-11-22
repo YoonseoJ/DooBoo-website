@@ -7,7 +7,7 @@ import Logo from '../../public/logo_w.png'
 export default function Header() {
     
     return (
-        <div className='fixed w-full bg-dooboo-700 px-8 pt-3 pb-4 flex place-content-between z-10 text-neutral-200 items-center'>
+        <div className='fixed w-full bg-dooboo-700 px-8 pt-3 pb-4 flex place-content-between z-20 text-neutral-200 items-center'>
             <Link 
                 activeClass="active"
                 to='landing' href="/"
