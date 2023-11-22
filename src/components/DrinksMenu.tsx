@@ -5,7 +5,7 @@ import MenuCard from './MenuCard';
 export default function DrinksMenu() {
     
     return (
-        <div className='w-2/6'>
+        <div className='w-7/12 md:w-[20rem]'>
             <MenuTitle text='Drinks' />
             <ul>
                 <li className='flex flex-col gap-7'>

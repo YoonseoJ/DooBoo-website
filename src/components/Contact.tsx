@@ -26,7 +26,7 @@ export default function Contact() {
                     priority
                 />
             </div>
-            <div className='flex w-220 place-content-center bg-dooboo-400/[.3] -top-16 py-10 pr-10'>
+            <div className='flex w-11/12 place-content-center bg-dooboo-400/[.3] -top-16 py-10 pr-10 lg:w-[50rem]'>
                 <div className='flex place-content-center w-2/3'>
                     <Image src={storeImage} 
                         alt='Picture of the mascot' 
