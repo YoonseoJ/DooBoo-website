@@ -6,7 +6,7 @@ import MenuSpicyOptions from './ui/MenuSpicyOptions'
 type Props = {
     image: StaticImageData
     eng: string
-    kor: string
+    kor?: string
     price: string
     options?: string[]
     spicyOptions?: string[]

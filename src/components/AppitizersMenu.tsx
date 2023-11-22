@@ -6,7 +6,7 @@ export default function AppitizersMenu() {
     
     return (
         <div className='w-10/12 md:w-[30rem]'>
-            <MenuTitle text={'Appitizers'} />
+            <MenuTitle text='Appitizers' />
             <ul>
                 <li className='flex flex-col gap-7'>
                     <MenuCard 
