@@ -14,8 +14,10 @@ export default function MenuDetail({image, eng, kor, ingredients}: Props) {
             {image &&
                 <Image src={image} alt={image.src} className=' w-full md:w-4/5 mx-auto brightness-95'/>
             }
-            <div className=' w-fit mx-auto mt-5 md:mt-10'>
-                <p className=' text-xl md:text-2xl'>{eng} | {kor}</p>
+            <div className=' w-fit flex mx-auto mt-5 md:mt-10 text-xl md:text-2xl gap-1'>
+                <p className='font-semibold'>{eng}</p>
+                <p>|</p>
+                <p>{kor}</p>
             </div>
         </div>
     )
