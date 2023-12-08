@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Mascot from '../../public/dooboo.png'
 import Link from 'next/link'
 import LocationIcon from './ui/icons/LocationIcon'
 import PhoneIcon from './ui/icons/PhoneIcon'

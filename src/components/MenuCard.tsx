@@ -2,6 +2,10 @@ import Image, { StaticImageData } from 'next/image'
 import MenuName from './ui/MenuName'
 import MenuOptions from './ui/MenuOptions'
 import MenuSpicyOptions from './ui/MenuSpicyOptions'
+import { useState } from 'react'
+import ModalPortal from './ui/ModalPortal'
+import MenuModal from './MenuModal'
+import MenuDetail from './MenuDetail'
 
 type Props = {
     image: StaticImageData
@@ -14,11 +18,14 @@ type Props = {
 }
 
 export default function MenuCard({image, eng, kor, price, options, spicyOptions, addCheese = false}: Props) {
+    const [openModal, setOpenModal] = useState(false)
+    const handleOpenMenu = () => {
+        setOpenModal(true)
+    }
     
     return (
         <div className='w-full flex items-center'>
-            <div className=' w-full'>
-                {/* Menu Name */}
+            <div className=' w-full' onClick={handleOpenMenu}>
                 <MenuName eng={eng} kor={kor} price={price} addCheese={addCheese}/>
                 {spicyOptions && 
                     <MenuSpicyOptions options={spicyOptions} />
@@ -26,16 +33,16 @@ export default function MenuCard({image, eng, kor, price, options, spicyOptions,
                 {options && 
                     <MenuOptions options={options} />
                 }
-                
             </div>
             
 
-            {/* Menu Image */}
-            {/* <Image src={image} 
-                alt='Image of food' 
-                className=' w-72 brightness-95'
-                priority
-            /> */}
+            {openModal && 
+                <ModalPortal>
+                    <MenuModal onClose={() => setOpenModal(false)}>
+                        <MenuDetail />
+                    </MenuModal>
+                </ModalPortal>
+            }
         </div>
     )
 }

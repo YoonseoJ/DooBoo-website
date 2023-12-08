@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Landing from '@/components/Landing'
 import Menu from '@/components/Menu'
+import OnlineOrder from '@/components/OnlineOrder'
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </div>
       <div id='menu'>
         <Menu />
+      </div>
+      <div id='onlineorder'>
+        <OnlineOrder />
       </div>
       <div id='about'>
         <About />

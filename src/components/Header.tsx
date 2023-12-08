@@ -33,6 +33,14 @@ export default function Header() {
                 >Menu</Link>
                 <Link 
                     activeClass="active"
+                    to='onlineorder' href="#onlineorder"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Online Order</Link>
+                <Link 
+                    activeClass="active"
                     to='about' href="#about"
                     spy={true}
                     smooth={true}
