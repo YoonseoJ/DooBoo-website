@@ -9,6 +9,7 @@ import InstagramIcon from './ui/icons/InstagramIcon'
 import Logo from '../../public/logo_b.png'
 import Deco from '../../public/deco.png'
 import storeImage from '../../public/store.png'
+import FacebookIcon from './ui/icons/FacebookIcon'
 
 export default function Contact() {
     return (
@@ -55,7 +56,11 @@ export default function Contact() {
                     </div>
                     <div className='w-fit'>
                         <h3 className=' text-sm font-semibold pb-2'>FOLLOW US</h3>
-                        <Link href='http://www.instagram.com/dooboorestaurant'><InstagramIcon/></Link>
+                        <div className='flex justify-center items-center gap-3'>
+                            <Link href='http://www.instagram.com/dooboorestaurant' target='blank'><InstagramIcon/></Link>
+                            <Link href='https://www.facebook.com/dooboorestaurant/' target='blank'><FacebookIcon/></Link>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className=' block md:hidden mt-10 h-[90vw] place-content-center w-full'>
