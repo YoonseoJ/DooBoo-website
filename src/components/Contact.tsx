@@ -60,7 +60,6 @@ export default function Contact() {
                             <Link href='http://www.instagram.com/dooboorestaurant' target='blank'><InstagramIcon/></Link>
                             <Link href='https://www.facebook.com/dooboorestaurant/' target='blank'><FacebookIcon/></Link>
                         </div>
-                        
                     </div>
                 </div>
                 <div className=' block md:hidden mt-10 h-[90vw] place-content-center w-full'>

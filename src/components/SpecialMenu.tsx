@@ -1,5 +1,4 @@
 import MenuTitle from './ui/MenuTitle';
-import dumpleImage from '../../public/menu/fried_dumpling.png'
 import MenuCard from './MenuCard';
 import Japchae from '../../public/menu/japchae.png'
 import Squid from '../../public/menu/squid.png'
