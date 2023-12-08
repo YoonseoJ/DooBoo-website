@@ -1,5 +1,5 @@
 import MenuTitle from './ui/MenuTitle';
-import dumpleImage from '../../public/fried_dumpling.png'
+import dumpleImage from '../../public/menu/fried_dumpling.png'
 import MenuCard from './MenuCard';
 
 export default function DrinksMenu() {

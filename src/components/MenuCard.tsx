@@ -8,7 +8,7 @@ import MenuModal from './MenuModal'
 import MenuDetail from './MenuDetail'
 
 type Props = {
-    image: StaticImageData
+    image?: StaticImageData
     eng: string
     kor?: string
     price: string
@@ -24,7 +24,7 @@ export default function MenuCard({image, eng, kor, price, options, spicyOptions,
     }
     
     return (
-        <div className='w-full flex items-center'>
+        <div className='w-full flex items-center cursor-pointer'>
             <div className=' w-full' onClick={handleOpenMenu}>
                 <MenuName eng={eng} kor={kor} price={price} addCheese={addCheese}/>
                 {spicyOptions && 
@@ -39,7 +39,7 @@ export default function MenuCard({image, eng, kor, price, options, spicyOptions,
             {openModal && 
                 <ModalPortal>
                     <MenuModal onClose={() => setOpenModal(false)}>
-                        <MenuDetail />
+                        <MenuDetail image={image} eng={eng} kor={kor} ingredients=''/>
                     </MenuModal>
                 </ModalPortal>
             }

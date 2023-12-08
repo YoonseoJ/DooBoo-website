@@ -1,6 +1,11 @@
 import MenuCard from './MenuCard';
-import dumpleImage from '../../public/fried_dumpling.png'
 import MenuTitle from './ui/MenuTitle';
+import Dumpling from '../../public/menu/fried_dumpling.png'
+import FriedClams from '../../public/menu/fried_clams.png'
+import ChickenSalad from '../../public/menu/chicken_salad.png'
+import TofuSalad from '../../public/menu/tofu_salad.png'
+import ShrimpSalad from '../../public/menu/shrimp_salad.png'
+import RiceCake from '../../public/menu/rice_cake.png'
 
 export default function AppitizersMenu() {
     
@@ -10,7 +15,7 @@ export default function AppitizersMenu() {
             <ul>
                 <li className='flex flex-col gap-7'>
                     <MenuCard 
-                        image={dumpleImage} 
+                        image={Dumpling} 
                         eng='Fried Dumplings' 
                         kor='군만두' 
                         price='10.99' 
@@ -20,13 +25,13 @@ export default function AppitizersMenu() {
                         ]}
                     />
                     <MenuCard 
-                        image={dumpleImage} 
+                        image={FriedClams} 
                         eng='Fried Clams' 
                         kor='조갯살튀김' 
                         price='10.99' 
                     />
                     <MenuCard 
-                        image={dumpleImage} 
+                        image={ChickenSalad} 
                         eng='Chicken Salad' 
                         kor='치킨샐러드' 
                         price='13.99' 
@@ -39,19 +44,19 @@ export default function AppitizersMenu() {
                         ]}
                     />
                     <MenuCard 
-                        image={dumpleImage} 
+                        image={TofuSalad} 
                         eng='Tofu Salad with Sesame Dressing' 
                         kor='두부샐러드' 
                         price='11.99' 
                     />
                     <MenuCard 
-                        image={dumpleImage} 
+                        image={ShrimpSalad} 
                         eng='Deep Fried Shrimp Salad' 
                         kor='새우샐러드' 
                         price='12.99' 
                     />
                     <MenuCard 
-                        image={dumpleImage} 
+                        image={RiceCake} 
                         eng='Stir Fried Rice Cakes' 
                         kor='떡볶이' 
                         price='10.99' 
