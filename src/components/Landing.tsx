@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import logoImage from '../../public/logo.png'
-import storeImage from '../../public/store.png'
 import Mascot from '../../public/dooboo.png'
 import bg_paper from '../../public/bg-paper.jpg'
 import Logo from '../../public/logo_b.png'
@@ -15,9 +13,11 @@ export default function Landing() {
     
     return (
         <div className='relative flex h-[40rem] lg:h-[45rem]'>
-            <Image src={bg_paper}
+            <Image src='/bg-paper.jpg'
                 alt='Pictures of the author' 
                 className='mx-auto w-full object-cover absolute h-full'
+                width={500}
+                height={500}
                 priority
             />
             <div className='w-full flex flex-col items-center mt-20 gap-6 md:flex-row md:items-center md:w-fit'>
