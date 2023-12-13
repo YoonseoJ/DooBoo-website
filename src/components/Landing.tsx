@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Mascot from '../../public/dooboo.png'
-import bg_paper from '../../public/bg-paper.jpg'
 import Logo from '../../public/logo_b.png'
 import { EB_Garamond } from 'next/font/google';
+import { useState } from 'react';
 
 const font = EB_Garamond({
     subsets: ['latin'],
@@ -10,14 +10,25 @@ const font = EB_Garamond({
 })
 
 export default function Landing() {
+    const [loading, setLoading] = useState(true)
+
+    function onImageLoad() {
+        setLoading(false)
+        console.log("loaded")
+    }
     
     return (
         <div className='relative flex h-[40rem] lg:h-[45rem]'>
+            {/* {loading && 
+                <div className=' mt-96'>test</div>
+            } */}
             <Image src='/bg-paper.jpg'
                 alt='Pictures of the author' 
                 className='mx-auto w-full object-cover absolute h-full'
                 width={500}
                 height={500}
+                onLoad={onImageLoad}
+                style={{ display: loading ? "none" : "block" }}
                 priority
             />
             <div className='w-full flex flex-col items-center mt-20 gap-6 md:flex-row md:items-center md:w-fit'>
