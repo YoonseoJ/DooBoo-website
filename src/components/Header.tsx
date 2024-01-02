@@ -65,48 +65,47 @@ export default function Header() {
                     duration={500}
                 >Contact</Link>
             </nav>
-            {navOpen && 
-                <nav className='md:hidden flex flex-col text-xl top-0 pt-20 px-5 gap-4 
-                                fixed h-screen right-0 z-40 bg-dooboo-700'>
-                    <Link 
-                        activeClass="active"
-                        to='menu' href="#menu"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        onClick={handleNavigationOpen}
-                    >Menu</Link>
-                    <Link 
-                        activeClass="active"
-                        to='onlineorder' href="#onlineorder"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        onClick={handleNavigationOpen}
-                    >Online Order</Link>
-                    <Link 
-                        activeClass="active"
-                        to='about' href="#about"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        onClick={handleNavigationOpen}
-                    >About</Link>
-                    <Link 
-                        activeClass="active"
-                        to='contact' href="#contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        onClick={handleNavigationOpen}
-                    >Contact</Link>
-                </nav>
-            }
-            
+            <nav className={`md:hidden flex flex-col text-xl top-0 pt-20 px-5 gap-4 
+                            fixed h-screen z-40 bg-dooboo-700 
+                            transition-all ease-in-out duration-500
+                            ${ !navOpen ? '-right-40' : 'right-0'}`}>
+                <Link 
+                    activeClass="active"
+                    to='menu' href="#menu"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={handleNavigationOpen}
+                >Menu</Link>
+                <Link 
+                    activeClass="active"
+                    to='onlineorder' href="#onlineorder"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={handleNavigationOpen}
+                >Online Order</Link>
+                <Link 
+                    activeClass="active"
+                    to='about' href="#about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={handleNavigationOpen}
+                >About</Link>
+                <Link 
+                    activeClass="active"
+                    to='contact' href="#contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={handleNavigationOpen}
+                >Contact</Link>
+            </nav>
         </div>
     )
 }

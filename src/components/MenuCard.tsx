@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/image'
+import { StaticImageData } from 'next/image'
 import MenuName from './ui/MenuName'
 import MenuOptions from './ui/MenuOptions'
 import MenuSpicyOptions from './ui/MenuSpicyOptions'
@@ -27,9 +27,9 @@ export default function MenuCard({image, eng, kor, price, options, spicyOptions,
     }
     
     return (
-        <div className={`w-full flex items-center ${
-            openModalOption && 'cursor-pointer'
-        }`}>
+        <div className={`w-full flex items-center 
+                        ${openModalOption && 'cursor-pointer'}
+                        `}>
             <div className=' w-full' onClick={handleOpenMenu}>
                 <MenuName eng={eng} kor={kor} price={price} addCheese={addCheese}/>
                 {spicyOptions && 
@@ -39,8 +39,6 @@ export default function MenuCard({image, eng, kor, price, options, spicyOptions,
                     <MenuOptions options={options} />
                 }
             </div>
-            
-
             {openModal && 
                 <ModalPortal>
                     <MenuModal onClose={() => setOpenModal(false)}>

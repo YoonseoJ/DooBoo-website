@@ -10,6 +10,7 @@ import LA from '../../public/menu/la.png'
 import PorkBelly from '../../public/menu/pork_belly.png'
 import CodCheeks from '../../public/menu/cod_cheeks.png'
 import Dakgabi from '../../public/menu/dakgalbi.png'
+import MenuExtraInfoText from './MenuExtraInfoText';
 
 export default function SpecialMenu() {
     
@@ -117,6 +118,7 @@ export default function SpecialMenu() {
                     />
                 </li>
             </ul>
+            <MenuExtraInfoText text='Click menu to see Image'/>
         </div>
     )
 }

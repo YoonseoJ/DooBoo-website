@@ -6,6 +6,7 @@ import ChickenSalad from '../../public/menu/chicken_salad.png'
 import TofuSalad from '../../public/menu/tofu_salad.png'
 import ShrimpSalad from '../../public/menu/shrimp_salad.png'
 import RiceCake from '../../public/menu/rice_cake.png'
+import MenuExtraInfoText from './MenuExtraInfoText';
 
 export default function AppitizersMenu() {
     
@@ -73,6 +74,7 @@ export default function AppitizersMenu() {
                     />
                 </li>
             </ul>
+            <MenuExtraInfoText text='Click menu to see Image'/>
         </div>
     )
 }

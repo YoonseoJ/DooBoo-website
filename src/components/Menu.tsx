@@ -35,31 +35,26 @@ export default function Menu() {
                         key={menu.name} 
                         onClick={() => {setSelected(menu.name)}}
                         className={`cursor-pointer uppercase hover:text-dooboo-400 border-b-2  
-                                ${menu.name === selected 
-                                    ? 'border-dooboo-400 text-dooboo-400' 
-                                    : 'border-white'}
-                            `}
+                                    ${menu.name === selected 
+                                        ? 'border-dooboo-400 text-dooboo-400' 
+                                        : 'border-white'}
+                                    `}
                     >
                         {menu.name}
                     </button>
                 ))}
             </div>
-            
             <div className='flex flex-col mx-auto items-center mt-0'>
                 {MenuList.map((menu) => {
                     if (menu.name === selected) {
                         return (
-                            <div className='w-fit flex justify-center' key={menu.name}>{menu.component}</div>
+                            <div className='w-fit flex justify-center' key={menu.name}>
+                                {menu.component}
+                            </div>
                         )
                     }
                 })}
             </div>
-            <div className=' flex justify-center items-center gap-1 text-sm mt-16 text-red-700 opacity-50'>
-                <p className='h-fit  pt-1.5'>*</p>
-                <p className='h-fit'>Click menu to see Image</p>
-            </div>
-            
         </div>
-        
     )
 }
