@@ -33,14 +33,9 @@ export default function MenuDetail({image, eng, kor, ingredients}: Props) {
             {!image && 
                 <p className=' my-20 mx-auto text-center'>Image does not exist</p>
             }
-            <div className=' w-fit flex mx-auto mt-5 md:mt-10 text-xl md:text-2xl gap-1'>
+            <div className=' w-fit flex flex-col items-center mx-auto mt-5 md:mt-10 text-xl md:text-2xl gap-1'>
                 <p className='font-semibold'>{eng}</p>
-                {kor && 
-                    <>
-                        <p>|</p>
-                        <p>{kor}</p>
-                    </>
-                }
+                <p>{kor}</p>
             </div>
         </div>
     )
