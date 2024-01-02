@@ -11,7 +11,7 @@ export default function OnlineOrder() {
     return (
         <div className='md:pb-28 pb-20 bg-dooboo-400 bg-opacity-30 pt-20'>
             <PageTitle text='online order'/>
-            <div className=' flex w-3/5 md:w-fit mx-auto gap-5 place-content-between md:gap-20 max-md:flex-col items-center'>
+            <div className='flex md:w-fit w-64 mx-auto gap-5 place-content-between md:gap-20 max-md:flex-wrap items-center'>
                 <OnlineOrderCard 
                     image={Uber} 
                     name='Uber Eats' 
