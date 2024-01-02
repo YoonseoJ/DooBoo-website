@@ -1,5 +1,8 @@
+'use client'
+
 import Image, { StaticImageData } from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { gsap } from 'gsap'
 
 type Props = {
     image?: StaticImageData
@@ -11,10 +14,15 @@ type Props = {
 export default function MenuDetail({image, eng, kor, ingredients}: Props) {
     const [loading, setLoading] = useState(true)
 
+    const tl = gsap.timeline({defaults: {duration: 0.75, ease: 'power1.out'}})
+
     function onImageLoad() {
         setLoading(false)
-        console.log("loaded")
     }
+
+    useEffect(() => {
+        tl.fromTo('#menuImage', {opacity: 0}, {opacity: 1, ease: "power2.out", duration: 0.5})
+    }, [tl])
     
     return (
         <div>
@@ -27,6 +35,7 @@ export default function MenuDetail({image, eng, kor, ingredients}: Props) {
                         src={image} 
                         alt={image.src} 
                         onLoad={onImageLoad}
+                        id='menuImage'
                         className=' w-full md:w-4/5 mx-auto brightness-95'/>
                 </div>
             }
