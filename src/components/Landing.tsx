@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Mascot from '../../public/dooboo.png'
+import Mascot from '../../public/logoimg.png'
 import Logo from '../../public/logo_b.png'
 import { EB_Garamond } from 'next/font/google';
 import { useState } from 'react';
@@ -19,22 +19,22 @@ export default function Landing() {
     
     return (
         <div className='relative flex h-[40rem] lg:h-[45rem]'>
-            {/* {loading && 
-                <div className=' mt-96'>test</div>
-            } */}
+            {loading && 
+                <div className=' mt-8 absolute bg-[#fffdf2] w-full h-[43rem]'></div>
+            }
             <Image src='/bg-paper.jpg'
                 alt='Pictures of the author' 
-                className='mx-auto w-full object-cover absolute h-full'
+                className='mx-auto w-full object-cover absolute h-full opacity-100 transition-opacity ease-in delay-75'
                 width={500}
                 height={500}
                 onLoad={onImageLoad}
-                style={{ display: loading ? "none" : "block" }}
+                // style={{ display: loading ? "none" : "block" }}
                 priority
             />
             <div className='w-full flex flex-col items-center mt-20 gap-6 md:flex-row md:items-center md:w-fit'>
                 <Image src={Mascot}
                     alt='Pictures of the author' 
-                    className='w-60 object-contain brightness-165 mt-20 md:mt-0 md:ml-10 md:w-72 lg:w-96 lg:ml-20 xl:ml-32'
+                    className='w-60 object-contain brightness-100 mt-20 md:mt-0 md:ml-10 md:w-72 lg:w-96 lg:ml-20 xl:ml-32'
                     priority
                 />
                 <div className=' w-fit -mt-10 z-10 flex flex-col items-center md:items-start md:w-full'>

@@ -15,16 +15,21 @@ type Props = {
     options?: string[]
     spicyOptions?: string[]
     addCheese?: boolean
+    openModalOption?: boolean
 }
 
-export default function MenuCard({image, eng, kor, price, options, spicyOptions, addCheese = false}: Props) {
+export default function MenuCard({image, eng, kor, price, options, spicyOptions, addCheese = false, openModalOption = true}: Props) {
     const [openModal, setOpenModal] = useState(false)
     const handleOpenMenu = () => {
-        setOpenModal(true)
+        if(openModalOption) {
+            setOpenModal(true)
+        }
     }
     
     return (
-        <div className='w-full flex items-center cursor-pointer'>
+        <div className={`w-full flex items-center ${
+            openModalOption && 'cursor-pointer'
+        }`}>
             <div className=' w-full' onClick={handleOpenMenu}>
                 <MenuName eng={eng} kor={kor} price={price} addCheese={addCheese}/>
                 {spicyOptions && 
