@@ -10,7 +10,6 @@ export default function DrinksMenu() {
             <ul>
                 <li className='flex flex-col gap-7'>
                     <MenuCard 
-                        image={dumpleImage} 
                         eng='Pop' 
                         price='2.50' 
                         options={[
@@ -21,25 +20,26 @@ export default function DrinksMenu() {
                             'Crush',
                             'Ginger Ale'
                         ]}
+                        openModalOption={false}
                     />
                     <MenuCard 
-                        image={dumpleImage} 
                         eng='Bottles Water' 
                         price='2.50' 
+                        openModalOption={false}
                     />
                     <MenuCard 
-                        image={dumpleImage} 
                         eng={`Beer (341ml)`}
                         price='5.99' 
                         options={[
                             'Cass',
                             'Kokanee'
                         ]}
+                        openModalOption={false}
                     />
                     <MenuCard 
-                        image={dumpleImage} 
                         eng={`Soju (360ml)`}
                         price='16.99' 
+                        openModalOption={false}
                     />
                 </li>
             </ul>

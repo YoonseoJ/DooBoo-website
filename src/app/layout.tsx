@@ -8,9 +8,7 @@ const roboto = Roboto_Condensed({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'DooBoo Restaurant',
-  description: `Welcome to DooBoo, authentic Korean cuisine.
-                Our restaurant offers vibrant flavors of Korea.
-                Join us at DooBoo for a culinary journey through the rich and diverse tapestry of Korean flavors.`,
+  description: `Welcome to DooBoo, authentic Korean cuisine. Our restaurant offers vibrant flavors of Korea. Join us at DooBoo for a culinary journey through the rich and diverse tapestry of Korean flavors.`,
   keywords: 'burnaby, korean, korea, restaurant, tofu, dooboo, edmonds korean, metrotown korean, burnaby korean, vancouver korean, 순두부, 두부, 한식당, 버나비 한국',
   icons: { icon: '/favicon.ico' }
 }
