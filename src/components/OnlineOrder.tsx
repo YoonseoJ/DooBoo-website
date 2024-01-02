@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import PageTitle from './ui/PageTitle';
 import Uber from '../../public/uber.png'
 import Skip from '../../public/skip.png'
@@ -11,7 +10,8 @@ export default function OnlineOrder() {
     return (
         <div className='md:pb-28 pb-20 bg-dooboo-400 bg-opacity-30 pt-20'>
             <PageTitle text='online order'/>
-            <div className='flex md:w-fit w-64 mx-auto gap-5 place-content-between md:gap-20 max-md:flex-wrap items-center'>
+            <div className='flex md:w-fit w-64 mx-auto gap-5 place-content-between 
+                            md:gap-20 max-md:flex-wrap items-center'>
                 <OnlineOrderCard 
                     image={Uber} 
                     name='Uber Eats' 
@@ -33,7 +33,6 @@ export default function OnlineOrder() {
                     url='https://www.fantuanorder.com/store/dooboo-korean/ca-680'
                 />
             </div>
-            
         </div>
     )
 }

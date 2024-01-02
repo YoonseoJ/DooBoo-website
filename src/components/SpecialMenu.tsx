@@ -10,6 +10,7 @@ import LA from '../../public/menu/la.png'
 import PorkBelly from '../../public/menu/pork_belly.png'
 import CodCheeks from '../../public/menu/cod_cheeks.png'
 import Dakgabi from '../../public/menu/dakgalbi.png'
+import MenuExtraInfoText from './MenuExtraInfoText';
 
 export default function SpecialMenu() {
     
@@ -117,10 +118,7 @@ export default function SpecialMenu() {
                     />
                 </li>
             </ul>
-            <div className=' flex justify-center items-center gap-1 text-sm mt-16 text-red-700 opacity-50'>
-                <p className='h-fit  pt-1.5'>*</p>
-                <p className='h-fit'>Click menu to see Image</p>
-            </div>
+            <MenuExtraInfoText text='Click menu to see Image'/>
         </div>
     )
 }

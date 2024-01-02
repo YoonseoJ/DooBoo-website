@@ -15,12 +15,11 @@ const font = EB_Garamond({
 
 export default function Landing() {
     const [loading, setLoading] = useState(true)
-
-    const tl = gsap.timeline({defaults: {duration: 0.75, ease: 'power1.out'}})
-
     function onImageLoad() {
         setLoading(false)
     }
+
+    const tl = gsap.timeline({defaults: {duration: 0.75, ease: 'power1.out'}})
 
     useEffect(() => {
         const hasWindow = typeof window !== 'undefined';
@@ -46,7 +45,6 @@ export default function Landing() {
                 width={500}
                 height={500}
                 onLoad={onImageLoad}
-                // style={{ display: loading ? "none" : "block" }}
                 priority
             />
             <div className='w-full flex flex-col items-center mt-20 gap-6 md:flex-row md:items-center md:w-fit'>
@@ -69,9 +67,6 @@ export default function Landing() {
                     </p>
                 </div>
             </div>
-            
-            
         </div>
-        
     )
 }

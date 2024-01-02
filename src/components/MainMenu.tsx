@@ -11,6 +11,7 @@ import HotPotRice from '../../public/menu/hotpot_rice.png'
 import Bibimbab from '../../public/menu/bibimbab.png'
 import BibimNoodle from '../../public/menu/bibim_noodle.png'
 import ColdNoodle from '../../public/menu/cold_noodle.png'
+import MenuExtraInfoText from './MenuExtraInfoText';
 
 export default function MainMenu() {
     
@@ -159,10 +160,7 @@ export default function MainMenu() {
                     </div>
                 </li>
             </ul>
-            <div className=' flex justify-center items-center gap-1 text-sm mt-16 text-red-700 opacity-50'>
-                <p className='h-fit  pt-1.5'>*</p>
-                <p className='h-fit'>Click menu to see Image</p>
-            </div>
+            <MenuExtraInfoText text='Click menu to see Image'/>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import ChickenSalad from '../../public/menu/chicken_salad.png'
 import TofuSalad from '../../public/menu/tofu_salad.png'
 import ShrimpSalad from '../../public/menu/shrimp_salad.png'
 import RiceCake from '../../public/menu/rice_cake.png'
+import MenuExtraInfoText from './MenuExtraInfoText';
 
 export default function AppitizersMenu() {
     
@@ -73,10 +74,7 @@ export default function AppitizersMenu() {
                     />
                 </li>
             </ul>
-            <div className=' flex justify-center items-center gap-1 text-sm mt-16 text-red-700 opacity-50'>
-                <p className='h-fit  pt-1.5'>*</p>
-                <p className='h-fit'>Click menu to see Image</p>
-            </div>
+            <MenuExtraInfoText text='Click menu to see Image'/>
         </div>
     )
 }

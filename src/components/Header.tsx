@@ -5,7 +5,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from '../../public/logo_w.png'
 import HeaderNavigationIcon from './ui/icons/HeaderNavigationIcon';
 import { useState } from 'react';
-import { gsap } from 'gsap'
 
 export default function Header() {
     const [navOpen, setNavOpen] = useState(false)
@@ -107,7 +106,6 @@ export default function Header() {
                     onClick={handleNavigationOpen}
                 >Contact</Link>
             </nav>
-            
         </div>
     )
 }
