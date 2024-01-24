@@ -3,10 +3,9 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
 
-<h3 align="center">DooBoo Website</h3>
+<h1 align="center">DooBoo Website</h1>
 
 </div>
 
