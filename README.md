@@ -26,9 +26,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -39,9 +36,9 @@
 
 ## About The Project
 
-This is a practice project for a local restaurant where I currently work. (*The restaurant is not using it.) 
+This is a practice project for a local restaurant where I currently work. (* The restaurant is not using it.) 
 <br/>
-The application is responsive and designed to match the theme of the restaurant. I built a website to help workers and customers communicate more efficiently and enhance the customer's experience at the restaurant. Currently, the restaurant does not have a website or QR code for customers to visit and check out information about the restaurant or view the menu.
+The application is responsive and designed to match the theme of the restaurant. I built this website to help workers and customers communicate more efficiently and enhance the overall customer experience. Currently, the restaurant does not have a website or QR code for customers to visit and check out information about the restaurant or view the menu.
 
 The website contains
 - Menu: designed to resemble the physical menu the restaurant has, making it more convenient for customers to check out.
@@ -50,6 +47,7 @@ The website contains
 - Information: Address, Contact, Opening hours information
 
 Developed the project to learn and improve programming skills.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
