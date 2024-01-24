@@ -75,7 +75,7 @@ Developed the project to learn and improve programming skills.
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/github_username/repo_name.git
+    https://github.com/YoonseoJ/DooBoo-website.git
     ```
 2. Install NPM packages
     ```sh
