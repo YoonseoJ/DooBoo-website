@@ -39,7 +39,14 @@
 
 ## About The Project
 
-A practice projext website of a local restaurant. the application is responsive and designed to match the theme of the restaurant. Built website to help workers and customers communicate more efficiently, and enhance customer's experience at the restaurant. (It is not being used by the restaurant)
+This is a practice project for a local restaurant where I currently work. (*The restaurant is not using it.) 
+The application is responsive and designed to match the theme of the restaurant. I built a website to help workers and customers communicate more efficiently and enhance the customer's experience at the restaurant. Currently, the restaurant does not have a website or QR code for customers to visit and check out information about the restaurant or view the menu.
+
+The website contains
+- Menu: designed to resemble the physical menu the restaurant has, making it more convenient for customers to check out.
+- Online Order: includes links to online order applications for easier access
+- About Restaurant: a description of the restaurant
+- Information: Address, Contact, Opening hours information
 
 Developed the project to learn and improve programming skills.
 
