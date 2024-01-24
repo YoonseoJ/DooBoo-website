@@ -40,6 +40,7 @@
 ## About The Project
 
 This is a practice project for a local restaurant where I currently work. (*The restaurant is not using it.) 
+<br/>
 The application is responsive and designed to match the theme of the restaurant. I built a website to help workers and customers communicate more efficiently and enhance the customer's experience at the restaurant. Currently, the restaurant does not have a website or QR code for customers to visit and check out information about the restaurant or view the menu.
 
 The website contains
